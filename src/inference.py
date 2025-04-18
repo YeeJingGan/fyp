@@ -40,7 +40,7 @@ def prediction(mri_file, modality):
 
         # Apply 3D median filtering
         residual_np = residual.squeeze().cpu().numpy()
-        filtered_residual = median_filter(residual_np, size=3)
+        filtered_residual = median_filter(residual_np, size=5)
         filtered_residual = torch.tensor(filtered_residual, dtype=residual.dtype)
 
     return image, filtered_residual
