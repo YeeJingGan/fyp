@@ -77,6 +77,21 @@ These error regions are treated as **anomalies**, enabling localisation of abnor
       ```
 ---
 
+## 🌐 Notes for Deploying the Model
+
+- To enable the interface and data storing functionality:
+  1. Create a MongoDB database to store results.
+  2. Create a `.env` file in the root directory of the project.
+  3. Add the following environment variables to the `.env` file:
+     ```
+     RAW_DATA_DIR=           # Absolute path to the folder containing raw MRI data
+     PROJECT_ROOT=           # Absolute path to the root directory of the project
+     MONGO_URI=              # MongoDB connection string
+     ```
+- Make sure MongoDB is accessible and running before launching the Streamlit interface.
+
+---
+
 ## 📊 Results
 
 - **Evaluation Metrics**: Dice score, Area Under Precision-Recall Curve (AUPRC)
