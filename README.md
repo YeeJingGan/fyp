@@ -54,7 +54,7 @@ These error regions are treated as **anomalies**, enabling localisation of abnor
 - The `data/` folder **should include** preprocessed healthy and unhealthy brain MRI data.
 - **However, due to storage constraints, the data is not provided here.**
 - To prepare the data for retraining:
-  1. Download the raw MRI datasets from the links provided in the "Datasets Used" section.
+  1. Download the raw MRI datasets from the links provided in the "Datasets" section.
   2. Use `data_preprocessor.py` located in the `src/` folder to preprocess the data.
 - ⚠️ **Important:**
   - When preprocessing **training data** (healthy brain MRIs), set `add_noise = True` to enable denoising for training the autoencoder.
