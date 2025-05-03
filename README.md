@@ -63,9 +63,9 @@ These error regions are treated as **anomalies**, enabling localisation of abnor
 ---
 ## 🚀 How to Deploy the Project
 
-1. **Clone the repository**:
+1. **Clone the repository**
 
-2. **Install dependencies**:
+2. **Install dependencies**
 
 3. **Prepare the dataset**:
     - Download pathological raw MRI data from the links provided in the "Datasets" section. 
